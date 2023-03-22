@@ -1,0 +1,139 @@
+.parent{
+    width: 350px;
+    height: 550px;
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    box-shadow: 3px 3px 7px 2px #e7e8ef;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    min-height: 60px;
+    background-color: #00a4bd;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logoContainer{
+   width: 40px;
+   height: 40px;
+   background-color: #fff;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+}
+
+
+.logo{
+   width: 100%;
+   height: 100%;
+}
+
+.header>p{
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ul{
+    width: 100%;
+    min-height: 410px;
+    max-height: 410px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ul>li{
+    width: 100%;
+    min-height: 30px;
+    max-height: fit-content;
+    display: flex;
+}
+
+.logo2{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.chat{
+    display: flex;
+    background-color: #eaf0f6;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 5px 5px 5px;
+    margin-top: 20px;
+    color: #8ea3ba;
+    font-family: var(--font-family);
+    font-size: 13px;
+}
+
+.inputContainer{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #e3e3e3;
+}
+
+.areaSpan{
+    width: 100%;
+    display: flex;
+}
+
+.textarea{
+    width: 90%;
+    height: 50px;
+    border: none;
+    resize: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sendContainer{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send{
+    width: 20px;
+    height: 20px;
+    opacity: 50%;
+}
+
+.removeOpacity{
+    opacity: 100%;
+}
+
+.last{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: var(--font-family);
+}
