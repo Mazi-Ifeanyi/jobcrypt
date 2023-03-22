@@ -1,5 +1,4 @@
 import { useState, useLayoutEffect } from 'react';
-import { ethers } from 'ethers';
 
 
 import classes from '../styles/Layout.module.css';
@@ -12,6 +11,7 @@ import chatIcon from '../assets/live-chat.png';
 import cancelIcon from '../assets/x.png';
 import { isNull, networks } from '../util/Util';
 import Chat from './Chat';
+import Jobs from './Jobs';
 
 
 const Layout = (props) =>{
@@ -79,6 +79,11 @@ const Layout = (props) =>{
     async function connectToMetaMask(){
         
         try{
+            await window.ethereum.request({
+              method: 'wallet_switchEthereumChain',
+              params: [{ chainId: networks.sepolia.chainId }],
+            });
+
             let accounts = await window.ethereum.request({method: 'eth_requestAccounts',params: []});
             if(isNull(accounts[0])){
                 setWallet('');
@@ -88,10 +93,6 @@ const Layout = (props) =>{
                 setButtonStatus('Web3 Connected!');
             }
 
-            await window.ethereum.request({
-              method: 'wallet_switchEthereumChain',
-              params: [{ chainId: networks.sepolia.chainId }],
-            });
           }catch (switchError) {
             // This error code indicates that the chain has not been added to MetaMask.
             if (switchError.code === 4902) {
@@ -155,8 +156,10 @@ const Layout = (props) =>{
                     </span>
                 </div>
             </header>
-            <section className={classes.nextSection}>
-                    <header className={classes.titleHeader}>Your Decentralized Job Results</header>
+            <header className={classes.titleHeader}>Your Decentralized Job Results</header>
+                    {(!isNull(wallet)) &&<Jobs />}
+                   {/* <Jobs /> */}
+                    <section className={classes.nextSection}>
                     <header className={classes.titleHeader}>Ready To Start?</header>
                     <p style={{ width: '100%', textAlign: 'center',fontSize: '18px'}}>Get the latest jobs direct to your inbox</p>
                     <div className={classes.emailContainer}>
