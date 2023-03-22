@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/jobcrypt/static/css/main.3ee4f721.css",
-    "main.js": "/jobcrypt/static/js/main.2307f29a.js",
+    "main.css": "/jobcrypt/static/css/main.381423a1.css",
+    "main.js": "/jobcrypt/static/js/main.6982de9d.js",
     "static/js/787.2bb0f170.chunk.js": "/jobcrypt/static/js/787.2bb0f170.chunk.js",
+    "static/media/filecoin-logo.png": "/jobcrypt/static/media/filecoin-logo.91cd6b98953635af8ac2.png",
     "static/media/send.png": "/jobcrypt/static/media/send.afa94fc8de124c323acd.png",
+    "static/media/hack.png": "/jobcrypt/static/media/hack.ad84199f949ff2dba310.png",
     "static/media/twitter.png": "/jobcrypt/static/media/twitter.8e65601e69067aadfe55.png",
     "static/media/discord.png": "/jobcrypt/static/media/discord.d7f7fca1a3c52fa3d56c.png",
     "static/media/tik-tok.png": "/jobcrypt/static/media/tik-tok.8bb71cc6c1bd4e58530b.png",
     "static/media/jcrypt_logo.svg": "/jobcrypt/static/media/jcrypt_logo.45d69324a25616daca4f94c2bf7f3d58.svg",
     "index.html": "/jobcrypt/index.html",
-    "main.3ee4f721.css.map": "/jobcrypt/static/css/main.3ee4f721.css.map",
-    "main.2307f29a.js.map": "/jobcrypt/static/js/main.2307f29a.js.map",
+    "main.381423a1.css.map": "/jobcrypt/static/css/main.381423a1.css.map",
+    "main.6982de9d.js.map": "/jobcrypt/static/js/main.6982de9d.js.map",
     "787.2bb0f170.chunk.js.map": "/jobcrypt/static/js/787.2bb0f170.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ee4f721.css",
-    "static/js/main.2307f29a.js"
+    "static/css/main.381423a1.css",
+    "static/js/main.6982de9d.js"
   ]
 }
